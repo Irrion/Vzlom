@@ -160,10 +160,13 @@ void transp(int size)
 			break;
 		}
 	}
-	if (tr) {
-		if (f) {
+	if (tr) 
+	{
+		if (f) 
+		{
 			mtx.lock();
-			for (int i = 0; i < size; i++) {
+			for (int i = 0; i < size; i++) 
+			{
 				key.push_back(arr[i]);
 			}
 			f = false;
