@@ -192,10 +192,13 @@ private:
 	void start()
 	{
 		bool ex = true;
-		while (ex) {
+		while (ex) 
+		{
 			int el = -1;
-			for (int i = 0; i < possible_key_size_ch.size(); i++) {
-				if (possible_key_size_ch[i] == 0) {
+			for (int i = 0; i < possible_key_size_ch.size(); i++) 
+			{
+				if (possible_key_size_ch[i] == 0) 
+				{
 					el = i;
 					block.lock();
 					possible_key_size_ch[i] = 1;
@@ -203,10 +206,12 @@ private:
 					break;
 				}
 			}
-			if (el == -1) {
+			if (el == -1) 
+			{
 				ex = false;
 			}
-			else {
+			else 
+			{
 				transp(possible_key_size[el]);
 			}
 		}
@@ -214,9 +219,11 @@ private:
 
 public:
 
-	void push() {
+	void push() 
+	{
 		int tmp = MAX_THREADS;
-		for (int i = 0; i < tmp; i++) {
+		for (int i = 0; i < tmp; i++) 
+		{
 			pool.push_back(thread(&ThreadPool::start, this));
 			pool.back().detach();
 		}
