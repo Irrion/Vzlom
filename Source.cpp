@@ -84,56 +84,7 @@ bool decrypt(int *a, int size)
 
 	
 
-	//string wrd;
-	//int correct = 0;
-	//int coun = 0;
-	//bool corr;
-	//for (int i = 0; i < deciph.size(); i++)
-	//{
-	//	int num_words = 0;
-	//	for (int j = 0; j < deciph[i].size(); j++)
-	//	{
-	//		if (j == 0 && deciph[i][j] == ' ')
-	//		{
-	//		}
-	//		else
-	//		{
-	//			if (deciph[i][j] != ' ')
-	//			{
-	//				wrd.push_back(deciph[i][j]);
-	//			}
-	//			if (deciph[i][j] == ' ' || j == deciph[i].size() - 1 /*|| deciph[i][j] == '#'*/)
-	//			{
-	//				if (deciph[i][j - 1] != ' ' /*|| deciph[i][j - 1] != '#'*/);
-	//				{
-	//					num_words++;
-	//					for (int k = 0; k < arr_alp.size(); k++)
-	//					{
-	//						if (wrd == arr_alp[k])
-	//						{
-	//							correct++;
-	//						}
-	//					}
-	//				}
-	//				/*wrd.push_back(deciph[i][j]);*/
-	//				if (!wrd.empty())
-	//				{
-	//					wrd.clear();
-	//				}
-	//			}
-	//		}
-	//	}
-	//	
-	//	if (correct == num_words)
-	//	{
-	//		corr = true;
-	//	}
-	//	else
-	//	{
-	//		corr = false;
-	//	}
-	//}
-	//return corr;
+	
 
 	int corect = 0;
 	int uncorect = 0;
