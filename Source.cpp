@@ -252,8 +252,14 @@ int main()
 		while (!file_al.eof())
 		{
 			getline(file_al, word);
-			arr_alp.push_back(word);
-	
+			if (word.size() == 0)
+			{
+
+			}
+			else
+			{
+				arr_alp.push_back(word);
+			}
 		}
 	}
 	else
@@ -271,8 +277,14 @@ int main()
 		while (!file_ciph.eof())
 		{
 			getline(file_ciph, text);
-			encr.push_back(text);
-			
+			if (word.size() == 0)
+			{ 
+
+			}
+			else
+			{
+				encr.push_back(text);
+			}
 		}
 
 		
